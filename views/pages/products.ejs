@@ -1,0 +1,43 @@
+<%- include ../partials/PageInit.ejs %>
+
+<body>
+	<!--header-->
+	<%- include ../partials/header.ejs %>
+	<!--Products-->
+	<div class="container">
+		<div class="products">
+			<h2 class=" products-in">SẢN PHẨM</h2>
+			<% for (let i = 0; i < 12; i++){%>
+			<% if (i % 4 === 0) { %>
+			<div class=" top-products">
+				<%}%>
+				<div class="col-md-3 md-col">
+					<div class="col-md">
+						<a href="single.html" class="compare-in"><img src="/images/pic11.jpg" alt="" />
+							<div class="compare">
+								<span>Thêm vào So Sánh</span>
+								<span>Thêm vào Ưa Thích</span>
+							</div>
+						</a>
+						<div class="top-content">
+							<h5><a href="single.html">Popular belief</a></h5>
+							<div class="white">
+								<a href="single.html" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2">THÊM VÀO GIỎ HÀNG</a>
+								<p class="dollar"><span class="in-dollar">$</span><span>2</span><span>9</span></p>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<% if ((i+1) % 4 === 0) {%>
+				<div class="clearfix"></div>
+				<%};%>
+				<%};%>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!---->
+		<%- include ../partials/footer %>
+</body>
+
+</html>
