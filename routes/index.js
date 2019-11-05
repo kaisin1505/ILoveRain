@@ -24,4 +24,14 @@ router.get('/account/', (req, res, next) => {
 router.get('/history/', (req, res, next) => {
   res.render('pages/history');
 });
+router.get('/login/', (req, res, next) => {
+  res.render('pages/login');
+});
+router.get('/register/', (req, res, next) => {
+  res.render('pages/register');
+});
+router.get('/forgotAccount/', (req, res, next) => {
+  res.render('pages/forgotAccount');
+});
+
 module.exports = router;

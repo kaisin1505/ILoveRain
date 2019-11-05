@@ -1,0 +1,28 @@
+<%- include ../partials/PageInit %>
+
+<body>
+	<!--header-->
+	<%- include ../partials/header %>
+	<div class="container">
+		<div class="account">
+			<h2 class="account-in">Đăng nhập</h2>
+			<form>
+				<div>
+					<span class="mail">Email*</span>
+					<input type="text">
+				</div>
+				<div>
+					<span class="word">Mật khẩu*</span>
+					<input type="password">
+				</div>
+				<input type="submit" value="Login">
+				<a href="/forgotAccount" style="color: red; margin-left: 5px;">Quên mật khẩu</a>
+			</form>
+		</div>
+	</div>
+	<!--footer-->
+	<%- include ../partials/footer %>
+
+</body>
+
+</html>
