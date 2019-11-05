@@ -6,4 +6,6 @@ router.get('/', function(req, res, next) {
   res.render('pages/index');
 });
 
+router.get('/product/:id', (req, res, next) => {
+  res.render('pages/single');
 module.exports = router;
