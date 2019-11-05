@@ -12,40 +12,39 @@
       Dữ liệu mẫu</div>
     <div class="card-body">
       <div class="table-responsive">
-          <button style="background: darkblue;"><a href="/addproduct" style="color: white">Thêm tài khoản</a></button>
-        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0" style="text-align: center;">
           <thead>
             <tr>
               <th>Xóa</th>
-              <th>Tài khoản</th>
-              <th>Họ tên</th>
-              <th>Loại khách hàng</th>
-              <th>Tuổi</th>
-              <th>Ngày tạo</th>
-              <th>Lần mua gần nhất</th>
+              <th>Mã sản phẩm</th>
+              <th>Tên sản phẩm</th>
+              <th>Số lượng</th>
+              <th>Người đặt</th>
+              <th>Ngày đặt</th>
+              <th>Tình trạng</th>
             </tr>
           </thead>
           <tfoot>
             <tr>
               <th>Xóa</th>
-              <th>Tài khoản</th>
-              <th>Họ tên</th>
-              <th>Loại khách hàng</th>
-              <th>Tuổi</th>
-              <th>Ngày tạo</th>
-              <th>Lần mua gần nhất</th>
+              <th>Mã sản phẩm</th>
+              <th>Tên sản phẩm</th>
+              <th>Số lượng</th>
+              <th>Người đặt</th>
+              <th>Ngày đặt</th>
+              <th>Tình trạng</th>
             </tr>
           </tfoot>
           <tbody>
             <% for (let i = 0; i < 10; i++){%>
             <tr>
               <td><a href="#" style="color: red"><i class="fas fa-trash"></i></a></td>
-              <td><a href="/account/<%=i+1%>">kaisin1505</a></td>
+              <td><a href="/reservation/<%=i+1%>">IP00<%=i+1%></a></td>
+              <td><a href="/reservation/<%=i+1%>">IPhone 11 Pro Max</a></td>
+              <td>2</td>
               <td>Trương Đại Tín</td>
-              <td>VIP</td>
-              <td>21</td>
-              <td>2019/11/01</td>
               <td>2019/11/05</td>
+              <td>Đang giao</td>
             </tr>
             <%}%>
                 </tbody>

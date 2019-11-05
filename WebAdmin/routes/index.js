@@ -14,5 +14,11 @@ router.get('/index', function(req, res, next) {
 router.get('/accounts', function(req, res, next) {
   res.render('tables');
 });
+router.get('/products', function(req, res, next) {
+  res.render('products');
+});
+router.get('/reservation', function(req, res, next) {
+  res.render('reservation');
+});
 
 module.exports = router;
