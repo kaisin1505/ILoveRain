@@ -18,4 +18,7 @@ router.get('/checkout/', (req, res, next) => {
 router.get('/cart/', (req, res, next) => {
   res.render('pages/cart');
 });
+router.get('/account/', (req, res, next) => {
+  res.render('pages/account');
+});
 module.exports = router;
