@@ -21,4 +21,7 @@ router.get('/cart/', (req, res, next) => {
 router.get('/account/', (req, res, next) => {
   res.render('pages/account');
 });
+router.get('/history/', (req, res, next) => {
+  res.render('pages/history');
+});
 module.exports = router;

@@ -1,0 +1,37 @@
+<%- include ../partials/PageInit %>
+
+<body>
+	<!--header-->
+	<%- include ../partials/header %>
+	<div class="container">
+		<h2>Lịch sử</h2>
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Mã đơn hàng</th>
+					<th>Ngày mua</th>
+					<th>Sản phẩm</th>
+					<th>Tổng tiền</th>
+					<th>Trạng thái</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% for (let i = 0; i < 4; i++) { %>
+				<tr>
+					<td><%= 94182895 + i %></td>
+					<td>05/11/2019</td>
+					<td> Sản Phẩm thứ <%=i+1%></td>
+					<td> <%=200+i*50%>.000 đồng</td>
+					<td> Đang giao hàng</td>
+				</tr>
+				<%}%>
+			</tbody>
+		</table>
+
+	</div>
+	<!--footer-->
+	<%- include ../partials/footer %>
+
+</body>
+
+</html>
